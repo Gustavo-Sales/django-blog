@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from django.views import generic
 
-# Create your views here.
+from .models import Post
+
+
+class Index(generic.ListView):
+    model = Post
+    queryset = Post.objects.all().order_by("-pub_date")
