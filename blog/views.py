@@ -18,7 +18,7 @@ class DetailPost(generic.DetailView):
 class SearchPosts(generic.ListView):
     model = Post
     context_object_name = "filtered_posts"
-    template_name = "pesquisa_posts.html"
+    template_name = "post_search.html"
 
     def get_queryset(self):
         query = self.request.GET.get("q")

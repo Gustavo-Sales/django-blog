@@ -4,9 +4,9 @@
 {% block content %}
 {% if filtered_posts %}
 
-<h2 class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold">publicações Encontradas:</h2>
+<h2 class="mb-10 text-3xl lg:text-4xl tracking-tight font-extrabold">Publicações Encontradas:</h2>
 
-<div class="grid gap-8 lg:grid-cols-2">
+<div class="grid gap-8 lg:grid-cols-1">
 {% for post in filtered_posts %}
     <article class="p-6 bg-white rounded-lg border border-gray-200 shadow-md">
         <div class="flex justify-between items-center mb-5">
@@ -38,5 +38,4 @@
     </div>
 </div> 
 {% endif %}
-</section>
 {% endblock %}
