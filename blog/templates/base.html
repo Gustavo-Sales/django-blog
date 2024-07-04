@@ -14,5 +14,12 @@
         {% endblock %}
     </main>
     {% include 'footer.html' %}
+
+    <script>
+        const codeTags = document.querySelectorAll("div > code");
+        codeTags.forEach(code => {
+            code.classList.add("text-white")
+        })
+    </script>
 </body>
 </html>
