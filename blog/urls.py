@@ -6,6 +6,6 @@ from . import views
 app_name = "blog"
 urlpatterns = [
     path("", views.Index.as_view(), name="index"),
-    path("post/<int:pk>", views.DetailPost.as_view(), name="post"),
+    path("post/<int:pk>/", views.DetailPost.as_view(), name="post"),
     path("tinymce/", include("tinymce.urls")),
 ]
