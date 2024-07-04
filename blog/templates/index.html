@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section>
+    {% if latest_posts_list %}
+        {% for post in latest_posts_list %}
+            <article>
+                <h2>{{ post.title }}</h2>
+            </article>
+        {% endfor %}
+    {% else %}
+        <div>
+            <h2>Não há publicações recentes</h2>
+        </div>
+    {% endif %}
+    </section>
+{% endblock %}
