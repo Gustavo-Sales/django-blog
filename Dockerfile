@@ -25,4 +25,4 @@ COPY . .
 EXPOSE 8000
 
 # Rodar comandos para coletar arquivos estáticos, aplicar migrações e iniciar o servidor
-CMD ["sh", "-c", "python manage.py migrate && gunicorn projeto.wsgi:application --bind 0.0.0.0:8000"]
+CMD ["sh", "-c", "python manage.py migrate && gunicorn DjangoBlog.wsgi:application --bind 0.0.0.0:8000"]
